@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Contact | Contact Management</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/addNewContact.css" />
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    </head>
+
+    <body>
+    <header>
+        <div class="title">Add New Contact</div>
+        <nav class="navbar_container">
+        <a href="index.html" class="nav_link"><i class="fa-solid fa-house"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form_container">
+        <h2>Create Contact</h2>
+        <form id="addContactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter full name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" required />
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Enter phone number" required />
+
+            <label for="tags">Tags (comma-separated)</label>
+            <input type="text" id="tags" placeholder="Friend, Work" />
+
+            <label for="image">Image URL</label>
+            <input type="url" id="image" placeholder="Paste image URL" />
+
+            <button type="submit">Add Contact</button>
+        </form>
+        <div id="message"></div>
+        </div>
+    </main>
+
+<script type="module" src="./scripts/addcontact.js"></script>
+</body>
+</html>

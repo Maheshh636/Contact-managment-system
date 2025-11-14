@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="title">Contact Management System</div>
+        <nav class="navbar_container">
+            <div class="navbar_item">
+                <a href="index.html" class="nav_link"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="navbar_item">
+                <a href="login.html" class="nav_link">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search & Filter Section -->
+        <section class="searching_filtering">
+            <div class="searching">
+                <form id="search_form">
+                    <input type="text" name="name" id="searchby" placeholder="Enter a name to search">
+                </form>
+            </div>
+            <div class="filtering">
+                <select class="filter_by">
+                    <option value="">Sort by</option>
+                    <option value="By_name">A-Z</option>
+                    <option value="By_Time">Time</option>
+                </select>
+                <button class="filter_btn"><i class="fa-solid fa-filter"></i></button>
+            </div>
+            <div class="addNewContact"><i class="fa-solid fa-square-plus"></i> Add Contact</div>
+        </section>
+
+        <!-- Contacts Grid -->
+        <div class="contacts_container">
+            <!-- Contact Card Example -->
+            
+        </div>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

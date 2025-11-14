@@ -1,0 +1,104 @@
+/* login.css */
+
+/* Background and body setup */
+body {
+  background: linear-gradient(to right, #e0f7fa, #e8eaf6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 80px; /* space for fixed header */
+}
+
+/* Centering form */
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Form box */
+form {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form heading */
+form h2 {
+  text-align: center;
+  color: #3949ab;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+form label {
+  font-weight: 600;
+  color: #3949ab;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus */
+form input:focus {
+  border-color: #4db6ac;
+  box-shadow: 0 0 6px rgba(77, 182, 172, 0.4);
+  outline: none;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  width: 100%;
+  background-color: #4db6ac;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3949ab;
+  transform: translateY(-2px);
+}
+
+/* "Don’t have an account?" link */
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #3949ab;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 4px;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #4db6ac;
+}

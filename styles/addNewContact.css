@@ -1,0 +1,96 @@
+    /* ===== Add Contact Page Styles ===== */
+
+    body {
+    background-color: #f0f4ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    }
+
+    main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+    .form_container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    animation: fadeIn 0.4s ease-in;
+    }
+
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    }
+
+    label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #444;
+    }
+
+    input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+    }
+
+    input:focus {
+    border-color: #3949ab;
+    outline: none;
+    }
+
+    button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    button:hover {
+    background-color: #303f9f;
+    }
+
+    .success_msg,
+    .error_msg {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    }
+
+    .success_msg {
+    color: green;
+    }
+
+    .error_msg {
+    color: red;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+    .form_container {
+        width: 90%;
+        padding: 20px;
+    }
+    }

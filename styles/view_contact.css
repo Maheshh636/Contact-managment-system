@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(to right, #e0f7fa, #e8eaf6);
+    margin: 0;
+    padding-top: 80px; /* header space */
+    font-family: system-ui, sans-serif;
+}
+
+.view_contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.contact_card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact_card:hover {
+    transform: translateY(-5px);
+}
+
+.contact_photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact_name {
+    color: #3949ab;
+    margin-bottom: 10px;
+}
+
+.tags_container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tags {
+    background-color: #4db6ac;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact_info p {
+    margin: 6px 0;
+    color: #333;
+    font-size: 15px;
+}
+
+.contact_info i {
+    margin-right: 8px;
+    color: #3949ab;
+}
+
+.action_buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.edit_btn {
+    background-color: #4db6ac;
+}
+
+.edit_btn:hover {
+    background-color: #3949ab;
+    transform: translateY(-2px);
+}
+
+.back_btn {
+    background-color: #757575;
+}
+
+.back_btn:hover {
+    background-color: #555555;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact_card {
+        padding: 20px;
+    }
+
+    .contact_photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .action_buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
